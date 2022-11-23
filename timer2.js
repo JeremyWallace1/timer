@@ -2,6 +2,7 @@ const readline = require('readline');
 
 readline.emitKeypressEvents(process.stdin);
 process.stdin.setRawMode(true);
+console.log("Please set a timer between 1 and 9 seconds: ");
 
 const rl = readline.createInterface({
   input: process.stdin,
@@ -9,7 +10,6 @@ const rl = readline.createInterface({
 });
 
 process.stdin.on("keypress", (str, key) => {
-  // console.log("Please set a timer between 1 and 9 seconds: ");
   if (key.name === 'b') {
     process.stdout.write(`\r \r\x07`); 
   }
