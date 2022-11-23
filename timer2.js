@@ -40,22 +40,3 @@ const setATimer = () => {
 };
 
 setATimer();
-
-//console.log(input);
-// if (input.length !== 0) {
-//   for (let i in input) {
-//     if (input[i] >= 0 && !isNaN(input[i])) {
-//       setTimeout(() => {
-//         //process.stdout.write(i);
-//         process.stdout.write('\x07'); // causes it to "write" a beeping sound (node system beep)
-//       }, input[i] * 1000);
-//     }
-//   }
-// }
-
-
-//user can input between 1 and 9 and it should
-//  - immediately output "setting timer for x seconds...", and
-//  - beep after that number of seconds has passed
-//ctrl+c to exit and program will say, "Thanks for using me, ciao!" before terminating
-
